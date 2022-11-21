@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,54 +13,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="home_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr8-94-wd3">
-                                <rect key="frame" x="137.66666666666666" y="85" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="41" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ujs-UV-czo"/>
-                                    <constraint firstAttribute="width" constant="100" id="n6P-as-tk7"/>
+                                    <constraint firstAttribute="width" secondItem="Dr8-94-wd3" secondAttribute="height" multiplier="1:1" id="oeg-y7-M63"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfT-zx-lLa">
-                                <rect key="frame" x="137.66666666666666" y="220" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="176" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Jcp-AG-8c9"/>
-                                    <constraint firstAttribute="height" constant="100" id="rrt-4Q-y90"/>
+                                    <constraint firstAttribute="width" secondItem="kfT-zx-lLa" secondAttribute="height" multiplier="1:1" id="6aE-wV-Yp2"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-ed-ivI">
-                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="312" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="c4s-XW-iqv"/>
-                                    <constraint firstAttribute="height" constant="100" id="rF4-iV-0e8"/>
+                                    <constraint firstAttribute="width" secondItem="lYl-ed-ivI" secondAttribute="height" multiplier="1:1" id="l28-MA-OkL"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiA-8q-GeA">
-                                <rect key="frame" x="151.66666666666666" y="558" width="71.666666666666657" height="38"/>
+                                <rect key="frame" x="107" y="470" width="161" height="72.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CiA-8q-GeA" secondAttribute="height" multiplier="29:13" id="6MH-8I-CLy"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START">
+                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="26"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -76,18 +61,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.070613540710000006" green="0.074463926259999993" blue="0.1019478813" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="kfT-zx-lLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0sz-qW-AdP"/>
-                            <constraint firstItem="lYl-ed-ivI" firstAttribute="top" secondItem="kfT-zx-lLa" secondAttribute="bottom" constant="36" id="131-vS-YOX"/>
-                            <constraint firstItem="kfT-zx-lLa" firstAttribute="top" secondItem="Dr8-94-wd3" secondAttribute="bottom" constant="35" id="9X4-hV-FIZ"/>
-                            <constraint firstItem="lYl-ed-ivI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G4M-At-mFp"/>
-                            <constraint firstItem="Dr8-94-wd3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="WhF-JA-Iye"/>
-                            <constraint firstItem="CiA-8q-GeA" firstAttribute="top" secondItem="lYl-ed-ivI" secondAttribute="bottom" constant="102" id="dTy-n2-683"/>
-                            <constraint firstItem="Dr8-94-wd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n95-EP-x1p"/>
-                            <constraint firstItem="CiA-8q-GeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJM-yl-pmW"/>
+                            <constraint firstItem="Dr8-94-wd3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="0Ei-Sc-quR"/>
+                            <constraint firstItem="CiA-8q-GeA" firstAttribute="top" secondItem="lYl-ed-ivI" secondAttribute="bottom" constant="58" id="3lb-bG-iiD"/>
+                            <constraint firstItem="Dr8-94-wd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="58M-QN-YHj"/>
+                            <constraint firstItem="kfT-zx-lLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P1i-hM-dtH"/>
+                            <constraint firstItem="CiA-8q-GeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pj7-5V-Rhv"/>
+                            <constraint firstItem="CiA-8q-GeA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="29:120" id="RYo-IA-7Xw"/>
+                            <constraint firstItem="kfT-zx-lLa" firstAttribute="top" secondItem="Dr8-94-wd3" secondAttribute="bottom" constant="35" id="Trw-Cf-Lx7"/>
+                            <constraint firstItem="lYl-ed-ivI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XVn-ZW-l8H"/>
+                            <constraint firstItem="lYl-ed-ivI" firstAttribute="top" secondItem="kfT-zx-lLa" secondAttribute="bottom" constant="36" id="l8I-xU-bVE"/>
+                            <constraint firstItem="lYl-ed-ivI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="rvj-eu-1Ba"/>
+                            <constraint firstItem="Dr8-94-wd3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="t2q-aY-sV8"/>
+                            <constraint firstItem="kfT-zx-lLa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="xbh-Da-Muw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLabel" destination="lYl-ed-ivI" id="4qm-rl-0SK"/>
+                        <outlet property="nextButton" destination="CiA-8q-GeA" id="dkg-VX-zjO"/>
                         <outlet property="redLabel" destination="Dr8-94-wd3" id="o4s-xY-U8t"/>
                         <outlet property="yellowLabel" destination="kfT-zx-lLa" id="1z4-Zm-fWm"/>
                     </connections>
