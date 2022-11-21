@@ -8,11 +8,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet var redLabel: UIView!
+    @IBOutlet var yellowLabel: UIView!
+    @IBOutlet var greenLabel: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        redLabel.alpha = 0.3
+        yellowLabel.alpha = 0.3
+        greenLabel.alpha = 0.3
+        
+        
     }
+    
+    
+    
+    @IBAction func startButton() {
+        
+        
+        
+        
+    }
+    
 
 
 }

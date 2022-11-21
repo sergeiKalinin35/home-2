@@ -68,6 +68,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLK-y3-xYl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -83,6 +86,11 @@
                             <constraint firstItem="CiA-8q-GeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJM-yl-pmW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLabel" destination="lYl-ed-ivI" id="4qm-rl-0SK"/>
+                        <outlet property="redLabel" destination="Dr8-94-wd3" id="o4s-xY-U8t"/>
+                        <outlet property="yellowLabel" destination="kfT-zx-lLa" id="1z4-Zm-fWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
